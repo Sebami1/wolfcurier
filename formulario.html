@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes y Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="combined-form" action="mailto:tu_correo@gmail.com" method="post" enctype="multipart/form-data">
+            <div class="form-column">
+                <h1>Registro de Clientes</h1>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ciudad">Ciudad</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="Lima">Lima</option>
+                    <option value="Arequipa">Arequipa</option>
+                    <option value="Trujillo">Trujillo</option>
+                    <option value="Cusco">Cusco</option>
+                </select>
+
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" required>
+            </div>
+
+            <div class="form-column">
+                <h1>Registro de Pedidos</h1>
+                <label for="cliente">Cliente (DNI)</label>
+                <input type="text" id="cliente" name="cliente" required>
+
+                <label for="fecha-pedido">Fecha del Pedido</label>
+                <input type="date" id="fecha-pedido" name="fecha-pedido" required>
+
+                <label for="descripcion">Descripción del Pedido</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" name="peso" required>
+
+                <label for="dimensiones">Dimensiones (cm)</label>
+                <input type="text" id="dimensiones" name="dimensiones" required>
+
+                <label for="direccion-recogida">Dirección de Recogida</label>
+                <input type="text" id="direccion-recogida" name="direccion-recogida" required>
+
+                <label for="direccion-entrega">Dirección de Entrega</label>
+                <input type="text" id="direccion-entrega" name="direccion-entrega" required>
+
+                <label for="fecha-entrega">Fecha de Entrega</label>
+                <input type="date" id="fecha-entrega" name="fecha-entrega" required>
+
+                <label for="estado">Estado del Pedido</label>
+                <select id="estado" name="estado" required>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en-transito">En Tránsito</option>
+                    <option value="entregado">Entregado</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+
+                <label for="imagen-producto">Imagen del Producto</label>
+                <input type="file" id="imagen-producto" name="imagen-producto" accept="image/*">
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" value="Enviar Formularios">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

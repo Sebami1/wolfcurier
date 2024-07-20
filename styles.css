@@ -1,0 +1,89 @@
+body {
+    font-family: 'calibri';
+    background-image: url('imagenes/fondo.jpg');
+    margin: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #24303c;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre elementos dentro del formulario */
+}
+
+.form-column {
+    flex: 1;
+    min-width: 45%;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #5683e2;
+  font-family: 'calibri';
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'calibri';
+    background-color: #24303c; /* Fondo ligeramente diferente para los campos */
+}
+
+textarea {
+    font-family: 'calibri';
+    color: white;
+    height: 60px;
+}
+
+.form-actions {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    font-family: 'calibri';
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="submit"]:hover {
+    background-color: #004494;
+}
