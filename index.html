@@ -55,56 +55,145 @@
             </div>
         </div>
     </section>
-
-    <section id="cobertura">
-        <div class="container">
-            <div class="primerdiv">
-                <h3>Registra tu pedido segun tu zona</h3>
-            </div>
-            <div class="segundodiv">
-                <ul>
-                    <h2>Zona 1</h2>
-                    <li>✔️ Ventanilla</li>
-                    <li>✔️ Pachacutec</li>
-                    <li>✔️ Marquez</li>
-                    <li>✔️ Oquendo</li>
-                    <li>✔️ San martin de Porres</li>
-                    <li>✔️ Los olivos</li>
-                    <li>✔️ Independencia</li>
-                    <li>✔️ Miraflores</li>
-                    <button>PIDE AQUI</button>
-    
-                </ul>
-                <ul>
-                    <h2>Zona 2</h2>
-                    <li>✔️ Ventanilla</li>
-                    <li>✔️ Pachacutec</li>
-                    <li>✔️ Marquez</li>
-                    <li>✔️ Oquendo</li>
-                    <li>✔️ San martin de Porres</li>
-                    <li>✔️ Los olivos</li>
-                    <li>✔️ Independencia</li>
-                    <li>✔️ Miraflores</li>
-                    <button>PIDE AQUI</button>
-    
-                </ul>
-                <ul>
-                    <h2>Zona 3</h2>
-                    <li>✔️ Ventanilla</li>
-                    <li>✔️ Pachacutec</li>
-                    <li>✔️ Marquez</li>
-                    <li>✔️ Oquendo</li>
-                    <li>✔️ San martin de Porres</li>
-                    <li>✔️ Los olivos</li>
-                    <li>✔️ Independencia</li>
-                    <li>✔️ Miraflores</li>
-                    <button>PIDE AQUI</button>
-    
-                </ul>
-            </div>
+    <section id="Messi">
+        <section id="cobertura">
+        <style>
+            #Messi {
+                font-family: inherit;
+                margin-top: 35px;
+                margin-bottom: 35px;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                width: auto;
+                height: auto;
+            }
             
+            #cobertura {
+                width: 88%;
+                max-width: auto;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                
+            }
+    
+            .tab {
+                display: flex;
+                justify-content: space-around;
+                border-bottom: 2px solid #2a2c8f;
+                background-color: #555555;
+                
+            }
+            
+            .tab button {
+                background-color: #0923bb;
+                color: #fff;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 20px;
+                transition: background-color 0.3s, border-color 0.3s;
+                font-size: 35px;
+                flex-grow: 1;
+                text-align: center;
+            }
+            
+            .tab button:hover {
+                background-color: #3892ce;
+            }
+            
+            .tab button.active {
+                background-color: #ffffff;
+                font-family: inherit;
+                font-size: 40px;
+                color: #2a2c8f;
+                border-bottom: 2px solid #333;
+            }
+            
+            .tabcontent {
+                display: none;
+                padding: 20px;
+                background-color: #ffffff;
+                color: #000;
+                text-align: left;
+            }
+    
+            .tabcontent h3 {
+                margin-top: 0;
+                font-size: 24px;
+            }
+    
+            .tabcontent p {
+                font-size: 18px;
+            }
+    
+            .tabcontent.active {
+                display: block;
+            }
+        </style>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'zona1')" id="defaultOpen">ℤ𝙊𝒩Ḁ𝟭</button>
+            <button class="tablinks" onclick="openCity(event, 'zona2')">ℤ𝙊𝒩Ḁ2</button>
+            <button class="tablinks" onclick="openCity(event, 'zona3')">ℤ𝙊𝒩Ḁ3</button>
         </div>
+        
+        <div id="zona1" class="tabcontent">
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Ate</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Lima</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Callao</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Mirafolres</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Lince</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Huachipa</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Rimac</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>San Lorenzo</p>
+            <button>PIDE AQUI</button>
+        </div>
+        
+        <div id="zona2" class="tabcontent">
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Ate</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Lima</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Callao</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Huachipa</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Rimac</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>San Lorenzo</p>
+            <button>PIDE AQUI</button>
+        </div>
+        
+        <div id="zona3" class="tabcontent">
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Ate</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Lima</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Callao</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Mirafolres</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f0ea0"><path d="m606-192-51-51 123-123H312q-70 0-119-49t-49-119q0-70 49-119t119-49h24v72h-24q-40.32 0-68.16 27.77-27.84 27.78-27.84 68Q216-494 243.84-466q27.84 28 68.16 28h366L555-561l51-51 210 210-210 210Z"/></svg>Lince</p>
+            <button>PIDE AQUI</button>
+        </div>
+        
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+    
+            // Abre la primera pestaña por defecto
+            document.getElementById("defaultOpen").click();
+        </script>
     </section>
+</section>
+    
+    
 
     <section id="contactenos">
         <div>
