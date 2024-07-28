@@ -110,10 +110,11 @@ header a:hover{
 }
 
 #somos-proya h5{
-    font-size: 1em ;
+    font-size: 1.3em ;
     margin-bottom: 10px;
     color: #0049b2;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif
+
 }
 
 #somos-proya .separador{
@@ -190,10 +191,31 @@ header a:hover{
     padding-left: 50px;
 }
 
-#contactenos .contactosegundo{
-    padding: 120px;
+#contactenos .contactoprimero{
+    padding: 0px;
+    height: 64vh;
+    padding-bottom: 230px;
 }
 
+#contactenos h3{
+    font-size: 35px;
+}
+#contactenos .contactosegundo{
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactenos .contactosegundo a{
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#contactenos .contactosegundo a:hover{
+    color: cadetblue;
+}
 #contactenos .mapa{
     justify-content: flex-end;
 }
