@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: inherit;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('imagenes/fondo.jpg');
+            margin: 0;
+        }
+        form {
+            background: #24303c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: transparent;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .error {
+            color: rgb(21, 193, 236);
+            font-size: 0.9em;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            font-size: 15px;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .btn-back {
+            background-color: #007BFF;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error" id="passwordError"></div>
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+        <button type="button" class="btn-back" id="backButton">Regresar</button>
+    </form>
+
+    <script>
+        const correctEmail = "usuario@hotmail.com";
+        const correctPassword = "contraseña123";
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let emailError = document.getElementById('emailError');
+            let passwordError = document.getElementById('passwordError');
+
+            emailError.textContent = '';
+            passwordError.textContent = '';
+
+            if (email === correctEmail && password === correctPassword) {
+                window.location.href = 'formulario.html';
+            } else {
+                if (email !== correctEmail) {
+                    emailError.textContent = 'Correo incorrecto';
+                }
+                if (password !== correctPassword) {
+                    passwordError.textContent = 'Contraseña incorrecta';
+                }
+            }
+        });
+
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

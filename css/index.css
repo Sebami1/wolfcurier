@@ -90,7 +90,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("imagenes/OIP.jpeg");
+    ,url("../imagenes/OIP.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -288,7 +288,7 @@ footer .container{
         height: 5px;
     }
     #somos-proya .img-container{
-        background-image: url("imagenes/lima.jpg");
+        background-image: url("../imagenes/lima.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -330,7 +330,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("imagenes/motorizado.jpeg");
+        ,url("../imagenes/motorizado.jpeg");
 
     }
 
@@ -340,7 +340,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("imagenes/motorizado.jpeg");
+        ,url("../imagenes/motorizado.jpeg");
     }
 
     .carta:nth-child(3){
@@ -349,7 +349,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("imagenes/motorizado.jpeg");
+        ,url("../imagenes/motorizado.jpeg");
 
     }
 

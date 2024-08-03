@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("imagenes/zorrito.jpg");
+            margin: 0;
+        }
+
+        .register-section {
+            text-align: center;
+            background: none; /* Fondo blanco semi-translúcido */
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .register-section h1 {
+            font-size: 6em;
+            color: #0255a7 ;
+            margin-bottom: 20px;
+    
+            background: -webkit-linear-gradient( #0126fa, #e7140d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 5.5em; font-weight: bold; 
+        }
+
+        .register-section p {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .register-section .highlight {
+            background-color: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgb(216, 207, 207);
+        }
+
+        .register-section button {
+            background: linear-gradient(to right, #0126fa, #e7140d); border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 1.2em; margin: 4px 2px; cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .register-section button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-section">
+        <h1>¡No te lo Pierdas!</h1>
+        <p class="highlight">Regístrate ahora para recibir información exclusiva y ofertas especiales directamente en tu correo.</p>
+        <p>Es rápido y fácil. ¡Aprovecha esta oportunidad para estar al tanto de nuestras últimas novedades!</p>
+        <button id="registerButton">Regístrate Ahora</button>
+    </div>
+
+    <script>
+        document.getElementById('registerButton').addEventListener('click', function() {
+            window.location.href = 'formulario1.html';
+        });
+    </script>
+</body>
+</html>

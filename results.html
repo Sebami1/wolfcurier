@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Recibidos</title>
+
+    <style>
+        
+        body {
+            font-family: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('imagenes/fondo.jpg');
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #24303c;
+            color: white;
+        }
+
+        tr{
+            background-color: #24303c;
+            color:white;
+            
+
+        }
+        
+        .btn-clear {
+            background-color: #d9534f;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn-clear:hover {
+
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="formulario.html">Formulario</a>
+                <a href="results.html">Resultados</a>
+                
+            </nav>
+        </div>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Correo Electrónico</th>
+                <th>Número de Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+        </tbody>
+    </table>
+    <button class="btn-clear" id="clearData">Eliminar todos los datos</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const data = JSON.parse(localStorage.getItem('contactData')) || [];
+            const tbody = document.getElementById('dataBody');
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                const emailCell = document.createElement('td');
+                const phoneCell = document.createElement('td');
+
+                emailCell.textContent = item.email;
+                phoneCell.textContent = item.phone;
+
+                row.appendChild(emailCell);
+                row.appendChild(phoneCell);
+
+                tbody.appendChild(row);
+            });
+
+            document.getElementById('clearData').addEventListener('click', function() {
+                localStorage.removeItem('contactData');
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

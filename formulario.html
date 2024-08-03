@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Clientes y Pedidos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="formulario.html">Formulario</a>
+                <a href="results.html">Resultados</a>
+                
+            </nav>
+        </div>
+    </header>
     <div class="container">
         <form id="combined-form" action="mailto:tu_correo@gmail.com" method="post" enctype="multipart/form-data">
             <div class="form-column">
@@ -37,9 +46,9 @@
                     <option value="Callao (Callao)">Callao (Callao)</option>
                     <option value="Carabayllo">Carabayllo</option>
                     <option value="Carmen de La Legua Reynoso (Callao)">Carmen de La Legua Reynoso (Callao)</option>
-                    <option value="Chaclacayo">Chaclacayo</option>
+                    <option value="Chaclacayo">Chaclacayo(Express)</option>
                     <option value="Chorrillos">Chorrillos</option>
-                    <option value="Cieneguilla">Cieneguilla</option>
+                    <option value="Cieneguilla">Cieneguilla(Express)</option>
                     <option value="Comas">Comas</option>
                     <option value="El Agustino">El Agustino</option>
                     <option value="Independencia">Independencia</option>
@@ -50,17 +59,13 @@
                     <option value="La Victoria">La Victoria</option>
                     <option value="Lince">Lince</option>
                     <option value="Los Olivos">Los Olivos</option>
-                    <option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
+                    <option value="Lurigancho-Chosica">Lurigancho-Chosica(Express)</option>
                     <option value="Lurín">Lurín</option>
                     <option value="Magdalena del Mar">Magdalena del Mar</option>
-                    <option value="Magdalena Vieja (San Juan de Lurigancho)">Magdalena Vieja (San Juan de Lurigancho)</option>
                     <option value="Miraflores">Miraflores</option>
                     <option value="Pachacamac">Pachacamac</option>
-                    <option value="Pucusana">Pucusana</option>
                     <option value="Pueblo Libre">Pueblo Libre</option>
                     <option value="Puente Piedra">Puente Piedra</option>
-                    <option value="Punta Hermosa">Punta Hermosa</option>
-                    <option value="Punta Negra">Punta Negra</option>
                     <option value="Rímac">Rímac</option>
                     <option value="San Bartolo">San Bartolo</option>
                     <option value="San Borja">San Borja</option>
@@ -71,9 +76,9 @@
                     <option value="San Martín de Porres">San Martín de Porres</option>
                     <option value="San Miguel">San Miguel</option>
                     <option value="Santa Anita">Santa Anita</option>
-                    <option value="Santa María del Mar">Santa María del Mar</option>
                     <option value="Santa Rosa">Santa Rosa</option>
                     <option value="Santiago de Surco">Santiago de Surco</option>
+                    <option value="Sarita Colonia">Sarita Colonia</option>
                     <option value="Surquillo">Surquillo</option>
                     <option value="Ventanilla (Callao)">Ventanilla (Callao)</option>
                     <option value="Villa El Salvador">Villa El Salvador</option>
@@ -94,11 +99,13 @@
                 <label for="descripcion">Descripción del Pedido</label>
                 <textarea id="descripcion" name="descripcion" required></textarea>
 
-                <label for="peso">Peso (kg)</label>
+                <label for="peso">Peso (gramos)</label>
                 <input type="number" id="peso" name="peso" required>
 
                 <label for="dimensiones">Dimensiones (cm)</label>
-                <input type="text" id="dimensiones" name="dimensiones" required>
+                <input type="text" id="alto" name="alto"  placeholder="Alto" required>
+                <input type="text" id="bajo" name="bajo" placeholder="Bajo" required>
+                <input type="text" id="ancho" name="ancho" placeholder="Ancho" required>
 
                 <label for="direccion-recogida">Dirección de Recogida</label>
                 <input type="text" id="direccion-recogida" name="direccion-recogida" required>
@@ -109,13 +116,6 @@
                 <label for="fecha-entrega">Fecha de Entrega</label>
                 <input type="date" id="fecha-entrega" name="fecha-entrega" required>
 
-                <label for="estado">Estado del Pedido</label>
-                <select id="estado" name="estado" required>
-                    <option value="pendiente">Pendiente</option>
-                    <option value="en-transito">En Tránsito</option>
-                    <option value="entregado">Entregado</option>
-                    <option value="cancelado">Cancelado</option>
-                </select>
 
                 <label for="imagen-producto">Imagen del Producto</label>
                 <input type="file" id="imagen-producto" name="imagen-producto" accept="image/*">

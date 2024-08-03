@@ -1,7 +1,37 @@
 body {
     font-family: 'calibri';
-    background-image: url('imagenes/fondo.jpg');
+    background-image: url('../imagenes/fondo.jpg');
     margin: 0;
+}
+
+header{
+    background-color: none;
+    
+}
+
+header .container{
+    display: flex;
+    
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 2px;
+    color: #0049b2;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: #0049b2;
 }
 
 .container {
@@ -9,7 +39,7 @@ body {
     margin: 0 auto;
     background: #24303c;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 15px;
     border-radius: 10px;
     box-shadow: 7px 13px 37px #000;
     display: flex;
