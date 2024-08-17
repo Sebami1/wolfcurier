@@ -43,8 +43,8 @@ def submit():
             imagen.save(imagen_path)
 
         # Abre el archivo Excel o crea uno si no existe
-        if os.path.exists('registros_clientes_pedidos.xlsx'):
-            workbook = load_workbook('registros_clientes_pedidos.xlsx')
+        if os.path.exists('registros_clientes.xlsx'):
+            workbook = load_workbook('registros_clientes.xlsx')
             sheet = workbook.active
         else:
             workbook = Workbook()
@@ -82,7 +82,7 @@ def submit():
             cell.border = thin_border
 
         # Guarda el archivo Excel
-        workbook.save('registros_clientes_pedidos.xlsx')
+        workbook.save('registros_clientes.xlsx')
 
         return 'Datos registrados correctamente'
     
