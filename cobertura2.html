@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Curier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px; /* Padding agregado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+            border: 2px solid #344f99;
+        }
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin: 40px 0 30px;
+            font-weight: 700;
+            background: -webkit-linear-gradient( #0126fa, #e7140d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3.0em; font-weight: bold; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .schedule-title {
+            font-size: 28px;
+            color: #007BFF;
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-align: center;
+            border-bottom: 3px solid #0126fa;
+            padding-bottom: 10px;
+            background: -webkit-linear-gradient( #0126fa, #e7140d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5em; font-weight:bold; 
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+        .table {
+            width: 100%;
+            border-collapse:collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            width: 25%;
+            word-wrap: break-word;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .table th {
+            background: linear-gradient(to left, #e7140d, #0126fa); 
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:hover {
+            background-color: #e6f7ff;
+            color: #007BFF;
+        }
+        .table .header-cell-c1,
+        .table .header-cell-c2,
+        .table .header-cell-c3,
+        .table .header-cell-c4 {
+            color: white;
+            font-weight: 700;
+        }
+        .table .header-cell-c1 {
+            background-color: #e0f7fa; /* Celeste medio para Cobertura 1 */
+        }
+        .table .header-cell-c2 {
+            background-color: #e0f7fa; /* Celeste medio para Cobertura 2 */
+        }
+        .table .header-cell-c3 {
+            background-color: #e0f7fa; /* Celeste medio para Cobertura 3 */
+        }
+        .table .header-cell-c4 {
+            background-color: #f44336; /* Rojo para Cobertura 4 */
+            color: rgb(255, 255, 255);
+        }
+        .table .district-group {
+            height: auto;
+        }
+        .table .district-group td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            vertical-align: top;
+        }
+        .table .district-group td:nth-child(4) {
+            background-color: #fff; /* Fondo blanco para distritos en Cobertura 4 */
+        }
+        .table .district-group td:last-child div {
+            padding-top: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: #d32f2f; /* Rojo para Tarifa Wolf Especial */
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title">Swift Wolf Curier</h1>
+        <table class="table">
+            <tr>
+                <th colspan="4">Tarifas planas</th>
+            </tr>
+            <tr>
+                <td>10.00</td>
+                <td>13.00</td>
+                <td>15.00</td>
+                <td>Precio a consultar</td>
+            </tr>
+            <tr>
+                <th class="header-cell-c1">Cobertura 1</th>
+                <th class="header-cell-c2">Cobertura 2</th>
+                <th class="header-cell-c3">Cobertura 3</th>
+                <th class="header-cell-c4">Cobertura 4</th>
+            </tr>
+            <tr class="district-group">
+                <td>
+                    SAN BORJA <br>
+                    SAN LUIS <br>
+                    CERCADO DE LIMA <br>
+                    SALAMANCA <br>
+                    LINCE <br>
+                    LA VICTORIA <br>
+                    SURCO <br>
+                    AGUSTINO <br>
+                    RIMAC <br>
+                    BREÑA <br>
+                    JESUS MARIA <br>
+                    ATE <br>
+                    SANTA CLARA <br>
+                    MOLINA <br>
+                </td>
+                <td>
+                    SJM <br>
+                    CHORILLOS <br>
+                    MIRAFLORES <br>
+                    SURQUILLO <br>
+                    MAGDALENA <br>
+                    BARRANCO <br>
+                    SMP <br>
+                    COMAS <br>
+                    INDEPENDENCIA <br>
+                    OLIVOS <br>
+                    SJL <br>
+                    PUEBLO LIBRE <br>
+                    SAN ISIDRO <br>
+                    SAN MIGUEL <br>
+
+                </td>
+                <td>
+                    VES <br>
+                    VMT <br>
+                    CALLAO CERCADO <br>
+                    VENTANILLA <br>
+                    CARABAYLLO <br>
+                    LA PUNTA <br>
+                    MARQUEZ <br>
+                    PACHACUTEC <br>
+                    PTE PIEDRA <br>
+                </td>
+                <td>
+                    MANCHAY <br>
+                    PACHACAMAC <br>
+                    LURIN <br>
+                    ANEXO 8 SJL <br>
+                    JICAMARCA <br>
+                    ANCON <br>
+                    HUAYCAN <br>
+                    HUACHIPA <br>
+                    CARAPONGO <br>
+                    <div>Tarifa Shift Wolf Especial:<br>Hacer consulta</div>
+                </td>
+            </tr>
+        </table>
+        
+        <h1 class="schedule-title">Nuestros Horarios</h1>
+        <table class="table">
+            <tr>
+                <th>Programa tu envío</th>
+                <th>Hora de recojo</th>
+                <th>Hora de reparto</th>
+            </tr>
+            <tr>
+                <td>Hasta las 10 am</td>
+                <td>10am a 10pm</td>
+                <td>1pm a 8pm</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
